@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".openingpage">
+
+    <ImageButton
+        android:layout_width="136dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/consumer"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="320dp"
+        android:background="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/but_customer"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="480dp"
+        android:text="Customer"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font"
+        app:backgroundTint="#F9B550"
+        app:cornerRadius="8dp" />
+
+    <ImageButton
+        android:layout_width="136dp"
+        android:layout_height="121dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/owner"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="320dp"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/butt"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="480dp"
+        android:text="Owner"
+        android:textColor="@color/white"
+        android:fontFamily="@font/font"
+        app:backgroundTint="#60A8FF"
+        app:cornerRadius="8dp"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

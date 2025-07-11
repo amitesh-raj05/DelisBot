@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9B550"
+    android:orientation="vertical">
+
+    <!-- First Section (1/3 of the screen) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        >
+
+        <!-- Content centered in the first section -->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/consumer"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/login"
+            android:layout_marginBottom="5dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Sign In to Your Existing Account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/login"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <!-- Second Section (2/3 of the screen) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/rounded_top"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/login"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="example@gmail.com"
+                android:textColorHint="#6A6A6A"
+                android:id="@+id/emailEditText"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/corner_round"
+                />
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/login"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="*************"
+                android:textColorHint="#6A6A6A"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/showhide"
+                android:id="@+id/passwordEditText"
+                android:background="@drawable/corner_round"
+                />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/butt"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font"
+                app:backgroundTint="#5F5F8B"
+                app:cornerRadius="8dp"
+                android:layout_alignParentEnd="true"/>
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

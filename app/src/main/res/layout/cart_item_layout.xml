@@ -1,0 +1,137 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:strokeColor="@android:color/black"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="0dp"
+    android:layout_margin="8dp">
+
+    <!-- Container to overlay cross icon -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Cross Icon at Top Right Corner -->
+        <ImageView
+            android:id="@+id/close_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="Close icon"
+            android:padding="4dp"
+            app:tint="@android:color/black" />
+
+        <!-- Main Content Layout Below -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/close_icon">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:orientation="vertical"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/burger"
+                    android:background="#F9B550"
+                    android:id="@+id/burger_image_view"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+                <!-- Counter Layout Below the Image -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingLeft="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Veg Burger"
+                    android:id="@+id/title_text_view"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/login"
+                    android:textSize="25sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:text="Price:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/login"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:text="149.00"
+                        android:id="@+id/price_text_view"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/login"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginTop="-10dp"
+                        android:text="Quantity:"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/login"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginTop="-10dp"
+                        android:text="2"
+                        android:id="@+id/quantity"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/login"
+                        android:textSize="20sp"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:strokeColor="@android:color/black"
+    app:strokeWidth="1dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:backgroundTint="#fff"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/animm"
+                android:background="#F9B550"
+                android:id="@+id/burger_image_view"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"/>
+
+            <!-- Counter Layout Below the Image -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <!-- Decrement Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:id="@+id/button_decrement"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font"
+                    app:backgroundTint="#fff"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    app:cornerRadius="30dp"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="1dp"/>
+
+                <!-- Counter Text -->
+                <TextView
+                    android:id="@+id/counter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Increment Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:id="@+id/button_increment"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font"
+                    app:backgroundTint="#fff"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Veg Burger"
+                android:id="@+id/title_text_view"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/login"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_text_view"
+                android:text="This burger is a delightful combination of crispy potato patties and fresh vegetables🍔"
+                android:textColor="@color/black"
+                android:fontFamily="@font/login"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="-4dp"
+                android:text="Rs. 149.00"
+                android:id="@+id/price_text_view"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/login"
+                android:textSize="18sp"
+                android:padding="8dp"/>
+
+            <!-- Add Button Positioned Below Price Text -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/butt"
+                android:text="Add"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font"
+                app:backgroundTint="#F9B550"
+                app:cornerRadius="8dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

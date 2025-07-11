@@ -1,0 +1,10 @@
+<!-- res/drawable/circle_image_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Background Circle with Border -->
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:color="#000000" android:width="2dp"/> <!-- Black stroke -->
+        </shape>
+    </item>
+</layer-list>

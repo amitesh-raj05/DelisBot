@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21822013207",
+    "project_id": "delis-bot",
+    "storage_bucket": "delis-bot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21822013207:android:0718b5c08d10819707c152",
+        "android_client_info": {
+          "package_name": "com.example.delisbot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx7cDk4CQe2K35bEapl9Jqz94Z9xIWYfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

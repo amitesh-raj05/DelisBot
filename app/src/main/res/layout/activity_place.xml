@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <!-- Top Section: Table Number Label and Dropdown -->
+    <LinearLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="#FFDCCF"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Label for Table No. -->
+        <TextView
+            android:id="@+id/table_no_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table No:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Dropdown (Spinner) for selecting Table Number -->
+        <Spinner
+            android:id="@+id/table_spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:gravity="end"
+            android:background="@drawable/spinner_background" />
+    </LinearLayout>
+
+    <!-- Middle Section: RecyclerView for Data Display -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/table_layout"
+        app:layout_constraintBottom_toTopOf="@id/go_to_cart_button"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- "Go To Cart" Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/go_to_cart_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go To Cart"
+        android:backgroundTint="#F9B550"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="0dp"
+         /> <!-- Optional margin for separation -->
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:menu="@menu/navigation_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemBackground="@android:color/transparent"
+        app:rippleColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
